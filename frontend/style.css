@@ -1,0 +1,229 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #222;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(78, 172, 207, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #4eaccf;
+}
+.logo-icon {
+  font-size: 2rem;
+  margin-right: 8px;
+}
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #4eaccf;
+}
+
+.banner {
+  background: linear-gradient(90deg, #4eaccf 60%, #a7f3d0 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.banner-text {
+  max-width: 500px;
+}
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+.btn-primary {
+  background: #fff;
+  color: #4eaccf;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(78, 172, 207, 0.12);
+  transition: background 0.2s, color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: #4eaccf;
+  color: #fff;
+}
+.banner-img img {
+  width: 180px;
+  filter: drop-shadow(0 4px 16px #4eaccf33);
+}
+
+section {
+  padding: 60px 0 40px 0;
+}
+h2 {
+  color: #4eaccf;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.especialidades-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.especialidade-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #4eaccf22;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 140px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.especialidade-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 6px 24px #4eaccf33;
+}
+.especialidade-card img {
+  width: 48px;
+  margin-bottom: 12px;
+}
+.especialidade-card span {
+  font-weight: 600;
+  color: #222;
+}
+
+.dentistas-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.dentista-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #4eaccf22;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.dentista-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 6px 24px #4eaccf33;
+}
+.dentista-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #a7f3d0;
+}
+.dentista-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #4eaccf;
+  font-weight: 700;
+}
+.dentista-card p {
+  margin: 0;
+  color: #222;
+  font-size: 1rem;
+}
+
+.agendamento form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #4eaccf22;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #4eaccf;
+  border-color: #4eaccf;
+}
+.mensagem-sucesso {
+  color: #22c55e;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #4eaccf;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 12px 0;
+  font-size: 1rem;
+  margin-top: 40px;
+} 

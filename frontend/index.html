@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odonto Sorriso - Clínica Odontológica</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-icon">🦷</span>
+        <span class="logo-text">Odonto Sorriso</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#dentistas">Dentistas</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner" id="home">
+    <div class="container banner-content">
+      <div class="banner-text">
+        <h1>Sorria com Confiança!</h1>
+        <p>Clínica odontológica moderna, atendimento humanizado e tecnologia de ponta para o seu sorriso.</p>
+        <a href="#agendamento" class="btn-primary">Agende sua consulta</a>
+      </div>
+      <div class="banner-img">
+        <img src="https://img.icons8.com/ios-filled/200/4eaccf/tooth.png" alt="Sorriso Odonto">
+      </div>
+    </div>
+  </section>
+
+  <section class="especialidades" id="especialidades">
+    <div class="container">
+      <h2>Nossas Especialidades</h2>
+      <div class="especialidades-list">
+        <div class="especialidade-card">
+          <img src="https://img.icons8.com/ios-filled/64/4eaccf/dental-crown.png" alt="Próteses">
+          <span>Próteses</span>
+        </div>
+        <div class="especialidade-card">
+          <img src="https://img.icons8.com/ios-filled/64/4eaccf/braces.png" alt="Ortodontia">
+          <span>Ortodontia</span>
+        </div>
+        <div class="especialidade-card">
+          <img src="https://img.icons8.com/ios-filled/64/4eaccf/toothache.png" alt="Clareamento">
+          <span>Clareamento</span>
+        </div>
+        <div class="especialidade-card">
+          <img src="https://img.icons8.com/ios-filled/64/4eaccf/dental-filling.png" alt="Implantes">
+          <span>Implantes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dentistas" id="dentistas">
+    <div class="container">
+      <h2>Nossos Dentistas</h2>
+      <div class="dentistas-list">
+        <div class="dentista-card">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. João Silva">
+          <h3>Dr. João Silva</h3>
+          <p>Ortodontista</p>
+        </div>
+        <div class="dentista-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dra. Ana Paula">
+          <h3>Dra. Ana Paula</h3>
+          <p>Implantodontista</p>
+        </div>
+        <div class="dentista-card">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Dr. Carlos Souza">
+          <h3>Dr. Carlos Souza</h3>
+          <p>Prótese Dentária</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="agendamento" id="agendamento">
+    <div class="container">
+      <h2>Agende sua Consulta</h2>
+      <form id="form-agendamento">
+        <div class="form-group">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="telefone" placeholder="Telefone" required>
+        </div>
+        <div class="form-group">
+          <select name="especialidade" required>
+            <option value="">Selecione a especialidade</option>
+            <option value="Próteses">Próteses</option>
+            <option value="Ortodontia">Ortodontia</option>
+            <option value="Clareamento">Clareamento</option>
+            <option value="Implantes">Implantes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="date" name="data" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-primary">Agendar</button>
+        </div>
+        <div id="mensagem-agendamento" class="mensagem-sucesso"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <div class="contato-info">
+        <div>
+          <strong>Telefone:</strong> (11) 99999-8888
+        </div>
+        <div>
+          <strong>E-mail:</strong> contato@odontosorriso.com.br
+        </div>
+        <div>
+          <strong>Endereço:</strong> Av. dos Sorrisos, 123 - Centro, São Paulo - SP
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>&copy; 2024 Odonto Sorriso. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
